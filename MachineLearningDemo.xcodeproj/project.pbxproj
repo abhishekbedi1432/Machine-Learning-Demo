@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF3184531F0FA677008B754F /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CF3184521F0FA677008B754F /* Inceptionv3.mlmodel */; };
+		CF3184561F0FA6FC008B754F /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3184551F0FA6FC008B754F /* ImageProcessor.swift */; };
+		CF5DDAB01F0FAD8B00357565 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DDAAF1F0FAD8B00357565 /* ReuseIdentifierProtocol.swift */; };
+		CFB731E81F0FC1E4004858E3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFB731E71F0FC1E4004858E3 /* TableViewCell.xib */; };
+		CFB731EA1F0FC26B004858E3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB731E91F0FC26B004858E3 /* TableViewCell.swift */; };
+		CFB731EC1F0FC2D7004858E3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB731EB1F0FC2D7004858E3 /* ViewModel.swift */; };
+		CFB731EE1F0FD769004858E3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB731ED1F0FD769004858E3 /* Constants.swift */; };
 		CFF9AFD61F0ED2C600AE3190 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9AFD51F0ED2C600AE3190 /* AppDelegate.swift */; };
 		CFF9AFD81F0ED2C600AE3190 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF9AFD71F0ED2C600AE3190 /* ViewController.swift */; };
 		CFF9AFDB1F0ED2C600AE3190 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFF9AFD91F0ED2C600AE3190 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF3184521F0FA677008B754F /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		CF3184551F0FA6FC008B754F /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = ../../../../../../Documents/Github/GuessImageCoreML/GuessImage/ImageProcessor.swift; sourceTree = "<group>"; };
+		CF5DDAAF1F0FAD8B00357565 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		CFB731E71F0FC1E4004858E3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CFB731E91F0FC26B004858E3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CFB731EB1F0FC2D7004858E3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CFB731ED1F0FD769004858E3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CFF9AFD21F0ED2C600AE3190 /* MachineLearningDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachineLearningDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF9AFD51F0ED2C600AE3190 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFF9AFD71F0ED2C600AE3190 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +49,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF3184511F0FA667008B754F /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF3184521F0FA677008B754F /* Inceptionv3.mlmodel */,
+			);
+			name = "ML Model";
+			sourceTree = "<group>";
+		};
+		CF3184541F0FA6EB008B754F /* Image Procesing */ = {
+			isa = PBXGroup;
+			children = (
+				CF3184551F0FA6FC008B754F /* ImageProcessor.swift */,
+			);
+			name = "Image Procesing";
+			sourceTree = "<group>";
+		};
+		CFB731EF1F0FD77B004858E3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CFB731ED1F0FD769004858E3 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		CFB731F01F0FD786004858E3 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFB731EB1F0FC2D7004858E3 /* ViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CFB731F11F0FD791004858E3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CF5DDAAF1F0FAD8B00357565 /* ReuseIdentifierProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CFB731F21F0FD79D004858E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFB731E91F0FC26B004858E3 /* TableViewCell.swift */,
+				CFB731E71F0FC1E4004858E3 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CFF9AFC91F0ED2C600AE3190 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +119,12 @@
 			children = (
 				CFF9AFD51F0ED2C600AE3190 /* AppDelegate.swift */,
 				CFF9AFD71F0ED2C600AE3190 /* ViewController.swift */,
+				CFB731F11F0FD791004858E3 /* Protocols */,
+				CFB731F01F0FD786004858E3 /* View Models */,
+				CFB731EF1F0FD77B004858E3 /* Constants */,
+				CFB731F21F0FD79D004858E3 /* Views */,
+				CF3184541F0FA6EB008B754F /* Image Procesing */,
+				CF3184511F0FA667008B754F /* ML Model */,
 				CFF9AFD91F0ED2C600AE3190 /* Main.storyboard */,
 				CFF9AFDC1F0ED2C600AE3190 /* Assets.xcassets */,
 				CFF9AFDE1F0ED2C600AE3190 /* LaunchScreen.storyboard */,
@@ -123,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF9AFE01F0ED2C600AE3190 /* LaunchScreen.storyboard in Resources */,
+				CFB731E81F0FC1E4004858E3 /* TableViewCell.xib in Resources */,
 				CFF9AFDD1F0ED2C600AE3190 /* Assets.xcassets in Resources */,
 				CFF9AFDB1F0ED2C600AE3190 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +206,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFF9AFD81F0ED2C600AE3190 /* ViewController.swift in Sources */,
+				CF3184531F0FA677008B754F /* Inceptionv3.mlmodel in Sources */,
+				CF5DDAB01F0FAD8B00357565 /* ReuseIdentifierProtocol.swift in Sources */,
+				CF3184561F0FA6FC008B754F /* ImageProcessor.swift in Sources */,
+				CFB731EA1F0FC26B004858E3 /* TableViewCell.swift in Sources */,
+				CFB731EC1F0FC2D7004858E3 /* ViewModel.swift in Sources */,
 				CFF9AFD61F0ED2C600AE3190 /* AppDelegate.swift in Sources */,
+				CFB731EE1F0FD769004858E3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +388,7 @@
 				CFF9AFE61F0ED2C600AE3190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
