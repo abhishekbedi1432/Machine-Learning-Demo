@@ -34,6 +34,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // On Initial load, hide the imageView
         kImageHeight = imgView.image == nil ? 0 : imageViewHeightConstraint.constant
         
         tableView.rowHeight = UITableViewAutomaticDimension
@@ -97,7 +99,8 @@ extension ViewController: UIImagePickerControllerDelegate {
             view.layoutIfNeeded()
             spinner.isHidden = false
             models.removeAll()
-            ImageProcessor.processImage(pickedImage.cgImage!) { [weak self] strings in
+            
+            ImageProcessor.processImage(pickedImage) { [weak self] strings in
                 self?.models = strings
                 self?.spinner.isHidden = true
             }
